@@ -1,6 +1,6 @@
 import { Mail, Phone, MapPin, Send, MessageSquare } from 'lucide-react';
 import { useState, FormEvent } from 'react';
-
+import axios from 'axios';
 export default function Contact() {
   const [formData, setFormData] = useState({
     name: '',
@@ -11,24 +11,25 @@ export default function Contact() {
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+ const [status, setStatus] = useState("");
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
-    setIsSubmitting(true);
-    setSubmitStatus('idle');
+    setStatus("Envoi en cours...");
 
-    await new Promise(resolve => setTimeout(resolve, 1500));
+    try {
+      await axios.post("http://localhost:5000/api/contact", formData);
+      setStatus("✅ Message envoyé avec succès !");
+      setFormData({ name: "", email: "", projectType: "", message: "" });
+    } catch (error) {
+      console.error(error);
+      setStatus("❌ Une erreur est survenue.");
+    }
 
-    setSubmitStatus('success');
-    setIsSubmitting(false);
-    setFormData({ name: '', email: '', projectType: '', message: '' });
-
-    setTimeout(() => {
-      setSubmitStatus('idle');
-    }, 5000);
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
