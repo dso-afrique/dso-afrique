@@ -19,7 +19,7 @@ export default function Contact() {
     setStatus("Envoi en cours...");
 
     try {
-      await axios.post("http://localhost:5000/api/contact", formData);
+      await axios.post("https://dso-afrique-server.onrender.com/api/contact", formData);
       setStatus("✅ Message envoyé avec succès !");
       setFormData({ name: "", email: "", projectType: "", message: "" });
     } catch (error) {
