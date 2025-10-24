@@ -13,6 +13,7 @@ export default function Contact() {
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
  const [status, setStatus] = useState("");
 
+ 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setStatus("Envoi en cours...");
