@@ -171,10 +171,10 @@ export default function Contact() {
                   <div className="ml-4">
                     <h3 className="font-semibold mb-1">Email</h3>
                     <a
-                      href="mailto:contact@dsoafrique.com"
+                      href="mailto:theafricancode1@gmail.com"
                       className="text-blue-100 hover:text-white transition-colors"
                     >
-                      contact@dsoafrique.com
+                      theafricancode1@gmail.com
                     </a>
                   </div>
                 </div>
@@ -191,7 +191,7 @@ export default function Contact() {
                       rel="noopener noreferrer"
                       className="text-blue-100 hover:text-white transition-colors"
                     >
-                      +33 1 23 45 67 89
+                      +33 7 46 57 42 60
                     </a>
                   </div>
                 </div>
@@ -203,7 +203,7 @@ export default function Contact() {
                   <div className="ml-4">
                     <h3 className="font-semibold mb-1">Localisation</h3>
                     <p className="text-blue-100">
-                      Paris, France
+                      Paris, France / Marrakech, Maroc
                       <br />
                       Services disponibles en Afrique et Europe
                     </p>

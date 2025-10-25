@@ -19,14 +19,20 @@ export default function Header({ currentPage, onNavigate }: HeaderProps) {
   return (
     <header className="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
-          <button
-            onClick={() => onNavigate('home')}
-            className="text-2xl font-bold text-[#0057ff] hover:opacity-80 transition-opacity"
-          >
-            DSO Afrique
-          </button>
-
+<div className="flex justify-between items-center h-20">
+  <div className="flex items-center space-x-4   ">
+    <img
+      src="/images/logo.png" // 👉 remplace ce chemin par ton logo réel
+      alt="Logo DSO Afrique"
+      className="w-20 h-20 rounded-full object-cover"
+    />
+    <button
+      onClick={() => onNavigate('home')}
+      className="text-2xl font-bold text-[#0057ff] hover:opacity-100 transition-opacity"
+    >
+      DSO Afrique
+    </button>
+  </div>
           <nav className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
               <button

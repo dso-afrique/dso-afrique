@@ -19,17 +19,21 @@ export default function About({ onNavigate }: AboutProps) {
 
         <div className="mb-20">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="order-2 lg:order-1">
-              <div className="bg-gradient-to-br from-[#0057ff] to-[#0046cc] rounded-2xl p-8 text-white h-full flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-32 h-32 bg-white rounded-full flex items-center justify-center mx-auto mb-6">
-                    <Users className="text-[#0057ff]" size={64} />
-                  </div>
-                  <h2 className="text-3xl font-bold mb-4">Ayoub Zekhnine</h2>
-                  <p className="text-xl text-blue-100">Fondateur & CEO</p>
-                </div>
-              </div>
-            </div>
+        <div className="order-2 lg:order-1">
+  <div className="bg-gradient-to-br from-[#0057ff] to-[#0046cc] rounded-2xl p-8 text-white h-full flex items-center justify-center">
+    <div className="text-center">
+      <div className="w-32 h-32 bg-white rounded-full flex items-center justify-center mx-auto mb-6 overflow-hidden">
+        <img
+          src="/images/profile.png" // 👉 remplace ce chemin par ton image
+          alt="Sawti Ayoub"
+          className="w-full h-full object-cover"
+        />
+      </div>
+      <h2 className="text-3xl font-bold mb-4">Sawti Ayoub</h2>
+      <p className="text-xl text-blue-100">Fondateur & CEO</p>
+    </div>
+  </div>
+</div>
 
             <div className="order-1 lg:order-2">
               <h2 className="text-3xl font-bold text-gray-900 mb-6">
@@ -37,10 +41,10 @@ export default function About({ onNavigate }: AboutProps) {
               </h2>
               <div className="space-y-4 text-gray-700 leading-relaxed text-lg">
                 <p>
-                  Je suis <span className="font-semibold text-[#0057ff]">Ayoub Zekhnine</span>, fondateur de DSO Afrique.
+                  Je suis <span className="font-semibold text-[#0057ff]">Sawti Ayoub</span>, fondateur de DSO Afrique.
                 </p>
                 <p>
-                  Développeur full stack avec <span className="font-semibold">5 ans d'expérience</span> auprès de grandes entreprises européennes telles que <span className="font-semibold">BNP Paribas</span> et <span className="font-semibold">EDF</span>, j'ai acquis une expertise solide dans le développement de solutions digitales performantes et évolutives.
+                  Développeur full stack avec <span className="font-semibold">9 ans d'expérience</span> auprès de grandes entreprises européennes, j'ai acquis une expertise solide dans le développement de solutions digitales performantes et évolutives.
                 </p>
                 <p>
                   Ma mission ? Aider les entrepreneurs africains à réussir grâce au digital en leur offrant des services de qualité internationale à des tarifs accessibles.
@@ -67,7 +71,7 @@ export default function About({ onNavigate }: AboutProps) {
                 Expérience Professionnelle
               </h3>
               <ul className="space-y-2 text-gray-600">
-                <li>• 5 ans en entreprises européennes</li>
+                <li>• 9 ans en entreprises européennes</li>
                 <li>• BNP Paribas - Solutions bancaires</li>
                 <li>• EDF - Systèmes énergétiques</li>
                 <li>• Projets internationaux complexes</li>
@@ -149,7 +153,7 @@ export default function About({ onNavigate }: AboutProps) {
             Travaillons Ensemble
           </h2>
           <p className="text-blue-100 text-lg mb-6 max-w-2xl mx-auto">
-            Vous avez un projet digital ? Parlons-en et voyons comment je peux vous aider à le concrétiser.
+            Vous avez un projet digital ? Parlons-en et voyons comment on peut vous aider à le concrétiser.
           </p>
           <button
             onClick={() => onNavigate('contact')}
