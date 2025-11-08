@@ -109,16 +109,15 @@ export default function Contact({ onNavigate }: ContactProps) {
                     htmlFor="phone"
                     className="block text-sm font-semibold text-gray-700 mb-2"
                   >
-                    numéro de téléphone avec l indicatif du pays *
+                    Numéro de téléphone avec l indicatif du pays *
                   </label>
                   <input
                     type="tel"
-                    id="phone"
-                    name="phone"
+                    id="phoneNumber"
+                    name="phoneNumber"
                     value={formData.phoneNumber}
                     onChange={handleChange}
                     required
-                    pattern="[0-9+ ]{6,15}"
                     className="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0057ff] focus:border-transparent transition-all"
                     placeholder="+212 6 12 34 56 78"
                   />
