@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Services from './pages/Services';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import ThankYouPage from './pages/ThankYouPage';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -22,8 +23,10 @@ function App() {
         return <Services onNavigate={handleNavigate} />;
       case 'about':
         return <About onNavigate={handleNavigate} />;
+      case 'ThankYouPage':
+        return <ThankYouPage/>;
       case 'contact':
-        return <Contact />;
+        return <Contact onNavigate={handleNavigate} />;
       default:
         return <Home onNavigate={handleNavigate} />;
     }

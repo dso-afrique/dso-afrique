@@ -1,7 +1,11 @@
 import { Mail, Phone, MapPin, Send, MessageSquare } from 'lucide-react';
 import { useState, FormEvent } from 'react';
 import axios from 'axios';
-export default function Contact() {
+
+interface ContactProps {
+  onNavigate: (page: string) => void;
+}
+export default function Contact({ onNavigate }: ContactProps) {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -22,6 +26,11 @@ export default function Contact() {
       await axios.post("https://dso-afrique-server.onrender.com/api/contact", formData);
       setStatus("✅ Message envoyé avec succès !");
       setFormData({ name: "", email: "", projectType: "", message: "" });
+
+      setTimeout(() => {
+        onNavigate('ThankYouPage')
+      }, 500);
+
     } catch (error) {
       console.error(error);
       setStatus("❌ Une erreur est survenue.");
