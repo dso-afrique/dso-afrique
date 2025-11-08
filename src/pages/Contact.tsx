@@ -9,6 +9,7 @@ export default function Contact({ onNavigate }: ContactProps) {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
+    phoneNumber:'',
     projectType: '',
     message: '',
   });
@@ -25,7 +26,7 @@ export default function Contact({ onNavigate }: ContactProps) {
     try {
       await axios.post("https://dso-afrique-server.onrender.com/api/contact", formData);
       setStatus("✅ Message envoyé avec succès !");
-      setFormData({ name: "", email: "", projectType: "", message: "" });
+      setFormData({ name: "", email: "",phoneNumber:"", projectType: "", message: "" });
 
       setTimeout(() => {
         onNavigate('ThankYouPage')
@@ -67,7 +68,10 @@ export default function Contact({ onNavigate }: ContactProps) {
 
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-2">
+                  <label
+                    htmlFor="name"
+                    className="block text-sm font-semibold text-gray-700 mb-2"
+                  >
                     Nom complet *
                   </label>
                   <input
@@ -83,7 +87,10 @@ export default function Contact({ onNavigate }: ContactProps) {
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-semibold text-gray-700 mb-2">
+                  <label
+                    htmlFor="email"
+                    className="block text-sm font-semibold text-gray-700 mb-2"
+                  >
                     Email *
                   </label>
                   <input
@@ -97,9 +104,30 @@ export default function Contact({ onNavigate }: ContactProps) {
                     placeholder="votre@email.com"
                   />
                 </div>
-
                 <div>
-                  <label htmlFor="projectType" className="block text-sm font-semibold text-gray-700 mb-2">
+                  <label
+                    htmlFor="phone"
+                    className="block text-sm font-semibold text-gray-700 mb-2"
+                  >
+                    numéro de téléphone avec l indicatif du pays *
+                  </label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    value={formData.phoneNumber}
+                    onChange={handleChange}
+                    required
+                    pattern="[0-9+ ]{6,15}"
+                    className="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0057ff] focus:border-transparent transition-all"
+                    placeholder="+212 6 12 34 56 78"
+                  />
+                </div>
+                <div>
+                  <label
+                    htmlFor="projectType"
+                    className="block text-sm font-semibold text-gray-700 mb-2"
+                  >
                     Type de projet *
                   </label>
                   <select
@@ -120,7 +148,10 @@ export default function Contact({ onNavigate }: ContactProps) {
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-semibold text-gray-700 mb-2">
+                  <label
+                    htmlFor="message"
+                    className="block text-sm font-semibold text-gray-700 mb-2"
+                  >
                     Message *
                   </label>
                   <textarea
@@ -153,15 +184,17 @@ export default function Contact({ onNavigate }: ContactProps) {
                   )}
                 </button>
 
-                {submitStatus === 'success' && (
+                {submitStatus === "success" && (
                   <div className="bg-green-50 border border-green-200 text-green-700 px-4 py-3 rounded-lg">
-                    Merci ! Votre message a été envoyé avec succès. Nous vous répondrons dans les plus brefs délais.
+                    Merci ! Votre message a été envoyé avec succès. Nous vous
+                    répondrons dans les plus brefs délais.
                   </div>
                 )}
 
-                {submitStatus === 'error' && (
+                {submitStatus === "error" && (
                   <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg">
-                    Une erreur est survenue. Veuillez réessayer ou nous contacter directement par email.
+                    Une erreur est survenue. Veuillez réessayer ou nous
+                    contacter directement par email.
                   </div>
                 )}
               </form>
@@ -170,7 +203,9 @@ export default function Contact({ onNavigate }: ContactProps) {
 
           <div>
             <div className="bg-gradient-to-br from-[#0057ff] to-[#0046cc] rounded-2xl p-8 text-white mb-8 h-full">
-              <h2 className="text-2xl font-bold mb-8">Informations de contact</h2>
+              <h2 className="text-2xl font-bold mb-8">
+                Informations de contact
+              </h2>
 
               <div className="space-y-6">
                 <div className="flex items-start">
@@ -235,7 +270,9 @@ export default function Contact({ onNavigate }: ContactProps) {
               </div>
 
               <div className="mt-10 pt-10 border-t border-white border-opacity-20">
-                <h3 className="font-semibold text-lg mb-4">Pourquoi nous choisir ?</h3>
+                <h3 className="font-semibold text-lg mb-4">
+                  Pourquoi nous choisir ?
+                </h3>
                 <ul className="space-y-3 text-blue-100">
                   <li className="flex items-start">
                     <span className="text-white mr-2">✓</span>
