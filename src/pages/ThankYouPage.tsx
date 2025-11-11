@@ -1,6 +1,14 @@
 import { CheckCircle } from "lucide-react";
+import { useEffect } from 'react';
+import ReactPixel from 'react-facebook-pixel';
 
 export default function ThankYouPage() {
+  
+    useEffect(() => {
+    // 🔥 Envoi de l'événement "Lead" à Meta Pixel
+    ReactPixel.track('Lead');
+  }, []);
+
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-blue-50 to-white text-gray-800">
       {/* LOGO */}
