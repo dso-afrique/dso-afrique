@@ -1,10 +1,16 @@
-import { Briefcase, GraduationCap, Target, Heart, Users, Award } from 'lucide-react';
+import {
+  Briefcase,
+  GraduationCap,
+  Target,
+  Heart,
+  Users,
+  Award,
+} from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
-interface AboutProps {
-  onNavigate: (page: string) => void;
-}
+export default function About() {
+  const navigate = useNavigate();
 
-export default function About({ onNavigate }: AboutProps) {
   return (
     <div className="bg-white pt-28 pb-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -17,23 +23,24 @@ export default function About({ onNavigate }: AboutProps) {
           </p>
         </div>
 
+        {/* Section Profil */}
         <div className="mb-20">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-        <div className="order-2 lg:order-1">
-  <div className="bg-gradient-to-br from-[#0057ff] to-[#0046cc] rounded-2xl p-8 text-white h-full flex items-center justify-center">
-    <div className="text-center">
-      <div className="w-32 h-32 bg-white rounded-full flex items-center justify-center mx-auto mb-6 overflow-hidden">
-        <img
-          src="/images/profile.png" // 👉 remplace ce chemin par ton image
-          alt="Sawti Ayoub"
-          className="w-full h-full object-cover"
-        />
-      </div>
-      <h2 className="text-3xl font-bold mb-4">Sawti Ayoub</h2>
-      <p className="text-xl text-blue-100">Fondateur & CEO</p>
-    </div>
-  </div>
-</div>
+            <div className="order-2 lg:order-1">
+              <div className="bg-gradient-to-br from-[#0057ff] to-[#0046cc] rounded-2xl p-8 text-white h-full flex items-center justify-center">
+                <div className="text-center">
+                  <div className="w-32 h-32 bg-white rounded-full flex items-center justify-center mx-auto mb-6 overflow-hidden">
+                    <img
+                      src="/images/profile.png" // 👉 remplace ce chemin par ton image
+                      alt="Sawti Ayoub"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <h2 className="text-3xl font-bold mb-4">Sawti Ayoub</h2>
+                  <p className="text-xl text-blue-100">Fondateur & CEO</p>
+                </div>
+              </div>
+            </div>
 
             <div className="order-1 lg:order-2">
               <h2 className="text-3xl font-bold text-gray-900 mb-6">
@@ -57,6 +64,7 @@ export default function About({ onNavigate }: AboutProps) {
           </div>
         </div>
 
+        {/* Section Compétences */}
         <div className="mb-20">
           <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
             Expertise & Compétences
@@ -110,6 +118,7 @@ export default function About({ onNavigate }: AboutProps) {
           </div>
         </div>
 
+        {/* Section Valeurs */}
         <div className="mb-20">
           <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
             Nos Valeurs
@@ -148,6 +157,7 @@ export default function About({ onNavigate }: AboutProps) {
           </div>
         </div>
 
+        {/* Call to action */}
         <div className="bg-gradient-to-r from-[#0057ff] to-[#0046cc] rounded-2xl p-10 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">
             Travaillons Ensemble
@@ -156,7 +166,7 @@ export default function About({ onNavigate }: AboutProps) {
             Vous avez un projet digital ? Parlons-en et voyons comment on peut vous aider à le concrétiser.
           </p>
           <button
-            onClick={() => onNavigate('contact')}
+            onClick={() => navigate('/contact')}
             className="bg-white text-[#0057ff] px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-all hover:shadow-lg hover:scale-105"
           >
             Me contacter
