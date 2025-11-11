@@ -226,7 +226,90 @@ export default function Contact() {
                 Informations de contact
               </h2>
 
-              {/* ... reste de ton JSX identique ... */}
+<div className="space-y-6">
+                <div className="flex items-start">
+                  <div className="bg-white bg-opacity-20 p-3 rounded-lg">
+                    <Mail className="text-white" size={24} />
+                  </div>
+                  <div className="ml-4">
+                    <h3 className="font-semibold mb-1">Email</h3>
+                    <a
+                      href="mailto:theafricancode1@gmail.com"
+                      className="text-blue-100 hover:text-white transition-colors"
+                    >
+                      theafricancode1@gmail.com
+                    </a>
+                  </div>
+                </div>
+
+                <div className="flex items-start">
+                  <div className="bg-white bg-opacity-20 p-3 rounded-lg">
+                    <Phone className="text-white" size={24} />
+                  </div>
+                  <div className="ml-4">
+                    <h3 className="font-semibold mb-1">WhatsApp</h3>
+                    <a
+                      href="https://wa.me/33123456789"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-100 hover:text-white transition-colors"
+                    >
+                      +33 7 46 57 42 60
+                    </a>
+                  </div>
+                </div>
+
+                <div className="flex items-start">
+                  <div className="bg-white bg-opacity-20 p-3 rounded-lg">
+                    <MapPin className="text-white" size={24} />
+                  </div>
+                  <div className="ml-4">
+                    <h3 className="font-semibold mb-1">Localisation</h3>
+                    <p className="text-blue-100">
+                      Paris, France / Marrakech, Maroc
+                      <br />
+                      Services disponibles en Afrique et Europe
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start">
+                  <div className="bg-white bg-opacity-20 p-3 rounded-lg">
+                    <MessageSquare className="text-white" size={24} />
+                  </div>
+                  <div className="ml-4">
+                    <h3 className="font-semibold mb-1">Disponibilité</h3>
+                    <p className="text-blue-100">
+                      Lundi - Vendredi : 9h00 - 18h00
+                      <br />
+                      Réponse sous 24h
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="mt-10 pt-10 border-t border-white border-opacity-20">
+                <h3 className="font-semibold text-lg mb-4">
+                  Pourquoi nous choisir ?
+                </h3>
+                <ul className="space-y-3 text-blue-100">
+                  <li className="flex items-start">
+                    <span className="text-white mr-2">✓</span>
+                    Devis gratuit sous 48h
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-white mr-2">✓</span>
+                    Accompagnement personnalisé
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-white mr-2">✓</span>
+                    Tarifs transparents
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-white mr-2">✓</span>
+                    Support après livraison
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>

@@ -134,7 +134,69 @@ export default function Services() {
             </p>
 
             <div className="grid md:grid-cols-2 gap-6">
-              {/* ... les blocs inchangés ... */}
+              <div className="bg-white p-6 rounded-xl border border-gray-100 hover:shadow-lg transition-all">
+                <div className="flex items-start">
+                  <div className="bg-blue-100 p-3 rounded-lg">
+                    <Megaphone className="text-[#0057ff]" size={24} />
+                  </div>
+                  <div className="ml-4">
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                      Gestion des Réseaux Sociaux
+                    </h3>
+                    <p className="text-gray-600 leading-relaxed">
+                      Animation quotidienne de vos comptes Facebook, Instagram, LinkedIn et TikTok pour engager votre communauté.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-white p-6 rounded-xl border border-gray-100 hover:shadow-lg transition-all">
+                <div className="flex items-start">
+                  <div className="bg-blue-100 p-3 rounded-lg">
+                    <PenTool className="text-[#0057ff]" size={24} />
+                  </div>
+                  <div className="ml-4">
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                      Création de Contenu
+                    </h3>
+                    <p className="text-gray-600 leading-relaxed">
+                      Articles de blog, visuels, vidéos et infographies adaptés à votre audience et optimisés pour la conversion.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-white p-6 rounded-xl border border-gray-100 hover:shadow-lg transition-all">
+                <div className="flex items-start">
+                  <div className="bg-blue-100 p-3 rounded-lg">
+                    <Target className="text-[#0057ff]" size={24} />
+                  </div>
+                  <div className="ml-4">
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                      Publicité Ciblée
+                    </h3>
+                    <p className="text-gray-600 leading-relaxed">
+                      Campagnes publicitaires Facebook Ads, Google Ads et LinkedIn Ads optimisées pour maximiser votre ROI.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-white p-6 rounded-xl border border-gray-100 hover:shadow-lg transition-all">
+                <div className="flex items-start">
+                  <div className="bg-blue-100 p-3 rounded-lg">
+                    <BarChart3 className="text-[#0057ff]" size={24} />
+                  </div>
+                  <div className="ml-4">
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                      Stratégie d'Acquisition
+                    </h3>
+                    <p className="text-gray-600 leading-relaxed">
+                      Développement de stratégies complètes pour attirer, convertir et fidéliser vos clients.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <div className="mt-8 p-6 bg-blue-50 rounded-xl border border-blue-100">
