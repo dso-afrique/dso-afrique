@@ -10,7 +10,7 @@ export default function Contact() {
     name: '',
     email: '',
     phoneNumber: '',
-    projectType: '',
+    profession: '',
     message: '',
   });
 
@@ -36,7 +36,7 @@ export default function Contact() {
         name: '',
         email: '',
         phoneNumber: '',
-        projectType: '',
+        profession: '',
         message: '',
       });
 
@@ -141,26 +141,21 @@ export default function Contact() {
 
                 <div>
                   <label
-                    htmlFor="projectType"
+                    htmlFor="profession"
                     className="block text-sm font-semibold text-gray-700 mb-2"
                   >
-                    Type de projet *
+                    Votre profession *
                   </label>
-                  <select
-                    id="projectType"
-                    name="projectType"
-                    value={formData.projectType}
+                  <input
+                    type="text"
+                    id="profession"
+                    name="profession"
+                    value={formData.profession}
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0057ff] focus:border-transparent transition-all"
-                  >
-                    <option value="">Sélectionnez un type</option>
-                    <option value="site-vitrine">Site vitrine</option>
-                    <option value="ecommerce">E-commerce</option>
-                    <option value="application">Application web/mobile</option>
-                    <option value="marketing">Marketing digital</option>
-                    <option value="autre">Autre</option>
-                  </select>
+                    placeholder="Votre profession"
+                  />
                 </div>
 
                 <div>

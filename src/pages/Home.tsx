@@ -10,11 +10,11 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-              Développez votre présence digitale avec{' '}
+              Accélérez votre croissance technologique avec{' '}
               <span className="text-[#0057ff]">DSO Afrique</span>
             </h1>
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-              Agence de développement et de marketing digital
+              Développement d’applications, solutions digitales et formation en technologies modernes
             </p>
             <button
               onClick={() => navigate('/contact')}
