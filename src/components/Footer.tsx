@@ -15,7 +15,8 @@ export default function Footer() {
     />
     <br/>
             <p className="text-gray-400 text-sm leading-relaxed">
-              Agence digitale spécialisée dans le développement web & mobile et le marketing digital pour les entreprises africaines et européennes.
+              Expert en Cloud, DevSecOps et sécurité applicative, nous accompagnons les entreprises dans leur transformation 
+              technologique et formons les talents africains aux compétences IT modernes.
             </p>
           </div>
 

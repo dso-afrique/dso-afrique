@@ -54,8 +54,7 @@ export default function About() {
                   Développeur full stack avec <span className="font-semibold">9 ans d'expérience</span> auprès de grandes entreprises européennes, j'ai acquis une expertise solide dans le développement de solutions digitales performantes et évolutives.
                 </p>
                 <p>
-                  Ma mission ? Aider les entrepreneurs africains à réussir grâce au digital en leur offrant des services de qualité internationale à des tarifs accessibles.
-                </p>
+               Ma mission ? Aider les organisations africaines à bâtir des systèmes modernes, sécurisés et performants grâce à l’architecture Cloud, au DevSecOps et à la formation technique avancée.                </p>
                 <p>
                   Chez DSO Afrique, nous croyons que chaque entreprise mérite d'avoir accès aux meilleures technologies et stratégies digitales pour se développer et prospérer.
                 </p>
@@ -104,17 +103,17 @@ export default function About() {
             <div className="bg-gradient-to-br from-blue-50 to-white p-6 rounded-xl border border-gray-100 hover:shadow-lg transition-all">
               <div className="bg-[#0057ff] w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                 <Target className="text-white" size={24} />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Marketing Digital
-              </h3>
-              <ul className="space-y-2 text-gray-600">
-                <li>• Stratégies d'acquisition</li>
-                <li>• Social Media Management</li>
-                <li>• SEO & Content Marketing</li>
-                <li>• Campagnes publicitaires</li>
-              </ul>
-            </div>
+                        </div>
+                        <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                  Architecture & Sécurité
+          </h3>
+          <ul className="space-y-2 text-gray-600">
+            <li>• Audit d’architecture et optimisation</li>
+            <li>• Mise en place d’environnements Cloud robustes</li>
+            <li>• Sécurisation des applications & pipelines</li>
+            <li>• Surveillance, monitoring & bonnes pratiques</li>
+          </ul>
+                      </div>
           </div>
         </div>
 

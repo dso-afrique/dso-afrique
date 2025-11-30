@@ -10,17 +10,17 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-              Accélérez votre croissance technologique avec{' '}
-              <span className="text-[#0057ff]">DSO Afrique</span>
+              Votre partenaire en Cloud, DevSecOps & Sécurité
+              <span className="text-[#0057ff]"> DSO Afrique</span>
             </h1>
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-              Développement d’applications, solutions digitales et formation en technologies modernes
+              Architecture, automatisation, sécurité et formation aux technologies modernes.
             </p>
             <button
               onClick={() => navigate('/contact')}
               className="inline-flex items-center bg-[#0057ff] text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-[#0046cc] transition-all hover:shadow-lg hover:scale-105"
             >
-              Demander un devis gratuit
+              Contactez-nous
               <ArrowRight className="ml-2" size={20} />
             </button>
           </div>
@@ -42,10 +42,10 @@ export default function Home() {
                 <Code className="text-white" size={32} />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                Développement Web & Mobile
+                Architecture & Cloud DevSecOps (Audit + Mise en place complète)
               </h3>
               <p className="text-gray-600 leading-relaxed mb-6">
-                Sites vitrines, e-commerce, applications sur mesure et APIs. Nous créons des solutions digitales performantes et évolutives adaptées à vos besoins.
+                Architecture & Mise en Place de Systèmes Cloud Sécurisés, Construisez une infrastructure moderne, scalable et sécurisée.
               </p>
               <button
                 onClick={() => navigate('/services')}
@@ -61,10 +61,11 @@ export default function Home() {
                 <Megaphone className="text-white" size={32} />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                Marketing Digital (SMMA)
+                Formez vos équipes ou préparez-vous à devenir ingénieur DevSecOps.
               </h3>
               <p className="text-gray-600 leading-relaxed mb-6">
-                Gestion des réseaux sociaux, publicité ciblée et création de contenu. Augmentez votre visibilité et convertissez vos prospects en clients.
+                Une formation complète et moderne pour maîtriser le DevSecOps, automatiser la chaîne de développement et renforcer la sécurité des environnements Cloud.
+                
               </p>
               <button
                 onClick={() => navigate('/services')}
@@ -93,7 +94,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Expertise</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                5 ans d'expérience auprès de grandes entreprises européennes
+                12 ans d'expérience auprès de grandes entreprises européennes
               </p>
             </div>
 
@@ -143,12 +144,14 @@ export default function Home() {
                   AM
                 </div>
                 <div className="ml-4">
-                  <h4 className="font-semibold text-gray-900">Aminata Mbaye</h4>
-                  <p className="text-sm text-gray-600">CEO, Fashion Boutique</p>
+                  <h4 className="font-semibold text-gray-900">Moussa  Mbaye</h4>
+                  <p className="text-sm text-gray-600">Développeur</p>
                 </div>
               </div>
               <p className="text-gray-600 leading-relaxed italic">
-                "DSO Afrique a transformé notre présence en ligne. Notre site e-commerce est magnifique et nos ventes ont triplé en 6 mois."
+                "La formation DevSecOps de DSO Afrique m’a permis de comprendre enfin Docker, Kubernetes, la sécurité, et comment les entreprises construisent leurs pipelines.
+                C’est très pratique, clair et orienté métier.
+                      Grâce à cette formation, j’ai pu décrocher une mission DevOps en quelques semaines."
               </p>
             </div>
 
@@ -174,11 +177,13 @@ export default function Home() {
                 </div>
                 <div className="ml-4">
                   <h4 className="font-semibold text-gray-900">Sophie Fontaine</h4>
-                  <p className="text-sm text-gray-600">Directrice Marketing</p>
+                  <p className="text-sm text-gray-600">Directrice Technique</p>
                 </div>
               </div>
               <p className="text-gray-600 leading-relaxed italic">
-                "Grâce à leur expertise en marketing digital, nous avons multiplié par 5 notre engagement sur les réseaux sociaux."
+                "Nous avons fait appel à DSO Afrique pour moderniser notre infrastructure et mettre en place un pipeline CI/CD sécurisé. Le résultat a dépassé nos attentes.
+               une architecture Cloud propre, scalable et entièrement automatisée.
+               Depuis, nos déploiements sont plus rapides, nos coûts mieux maîtrisés, et notre sécurité renforcée."
               </p>
             </div>
           </div>

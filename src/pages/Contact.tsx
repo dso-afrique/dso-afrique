@@ -40,7 +40,6 @@ export default function Contact() {
         message: '',
       });
 
-      // redirection après envoi
       setTimeout(() => {
         navigate('/thank-you');
       }, 500);
@@ -75,7 +74,30 @@ export default function Contact() {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
+          {/* Colonne gauche : vidéo + formulaire */}
           <div>
+            {/* ✅ Bloc vidéo ajouté ici */}
+            <div className="mb-8">
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">
+                Regardez cette vidéo avant de remplir le formulaire
+              </h2>
+            <div className="relative w-full overflow-hidden rounded-2xl shadow-lg" style={{ paddingBottom: '56.25%' }}>
+          <iframe
+            className="absolute top-0 left-0 w-full h-full"
+            src="https://www.youtube.com/embed/_uRd-zfwkXI"
+            title="Présentation de la formation DevSecOps & Cloud"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              />
+            </div>
+              <p className="mt-4 text-gray-700 text-sm">
+                Dans cette vidéo, je vous explique l’architecture DevSecOps, ce que vous allez apprendre
+                dans la formation et comment je peux accompagner votre entreprise sur le Cloud et la sécurité.
+              </p>
+            </div>
+
+            {/* Bloc formulaire */}
             <div className="bg-gradient-to-br from-blue-50 to-white rounded-2xl p-8 border border-gray-100 mb-8">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">
                 Envoyez-nous un message
@@ -214,14 +236,14 @@ export default function Contact() {
             </div>
           </div>
 
-          {/* colonne de droite inchangée */}
+          {/* Colonne de droite inchangée */}
           <div>
             <div className="bg-gradient-to-br from-[#0057ff] to-[#0046cc] rounded-2xl p-8 text-white mb-8 h-full">
               <h2 className="text-2xl font-bold mb-8">
                 Informations de contact
               </h2>
 
-<div className="space-y-6">
+              <div className="space-y-6">
                 <div className="flex items-start">
                   <div className="bg-white bg-opacity-20 p-3 rounded-lg">
                     <Mail className="text-white" size={24} />
@@ -282,6 +304,7 @@ export default function Contact() {
                   </div>
                 </div>
               </div>
+
               <div className="mt-10 pt-10 border-t border-white border-opacity-20">
                 <h3 className="font-semibold text-lg mb-4">
                   Pourquoi nous choisir ?
@@ -307,6 +330,7 @@ export default function Contact() {
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </div>
